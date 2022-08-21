@@ -1,0 +1,339 @@
+{% load static %}
+<!-- #Created with Django -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type="image/png" href ="{% static 'images/Webheader.png' %}" >
+	
+	 
+	<title>Jake Mofa</title>
+
+    <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="{% static 'images/TResume.pdf' %}" download="/Resume.pdf" button  id= "copyButtonT" class="copyButtonT" onclick="
+                    (()=> {
+                        var copyButtonT = document.getElementById('copyButtonT')
+                        navigator.clipboard.writeText('Jakemofa@gmail.com');
+                        copyButtonT.innerText = 'Downloaded'
+                    })()
+                    "></button> RESUME</a></li>
+            </ul>
+        </nav>
+        
+        <div class="intro">
+            <div class="intro-text">
+                <h1 class="hide">
+                    <span class="text">Algorithm</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">Help's</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">Renovate Innovation.</span>
+                </h1>
+            </div>
+        </div>
+        <div class="slider"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+            integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="{% static 'JS/app.js' %}"></script>
+
+        <section id="about" class="overlay">
+            <div class="flex-split">
+                <img id="Profile" class="profile" src="{% static 'images/Jake.jpeg' %}" />
+                
+                 
+                    
+                <div class="margin-LR-10">
+                    
+                    <h2 class='section-title'>About Me</h2>
+                    <p>Hello my name is Jake mofa, and I'm a Python developer with an expertise  in backend developement
+                        based in the bay area of California.
+                        <br>
+                        Specializing in the reconstruction of Algorithm Data structures, designing, deploying, and debugging
+                        development projects, with a constituent of automation.
+                    </p>
+                    <br>
+                    </p>
+
+                    <p> Here are some Technical experiences that I have been working with:</p>
+               
+                    <div class="w-row">
+
+                        <div class="w-col">
+                            <ul role="list" class="list">
+                                <li class="list-item">Python</li>
+                                <li>JavaScript</li>
+                                <li>Git &amp; Gitbash</li>
+                                <li>HTML5 &amp; CSS3</li>
+                            </ul>
+                        </div>
+                        <div class="w-col ">
+                            <ul role="list" class="list-2">
+                                <li>Django &amp; Flask</li>
+                                <li>SQL &amp; NoSql</li>
+                                <li>API &amp; REST</li>
+                                <li>Kubernetes</li>
+                            </ul>
+                        </div>
+                        <div class="w-col">
+                            <ul role="list" class="list">
+                                <li class="list-item">CI/CD</li>
+                                <li>Debugging SSH</li>
+                                <li>Docker</li>
+                                <li>AWS &amp; Azure</li>
+                            </ul>
+                        </div>
+                        <div class="w-col">
+                            <ul role="list" class="list-2">
+                                <li>Pandas/Numpy</li>
+                                <li>OOP</li>
+                                <li>Linux &amp; Terminal Bash</li>
+                                <li> Postgressql</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="div-block-2">
+                    <a href="https://github.com/JakeMofa" class="side-icons w-inline-block"><img src="{% static 'images/Github11.png' %}"
+                            loading="lazy" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/jake-mofa-b52a76205
+                        " class="side-icons w-inline-block"><img src="{% static 'images/Linkedin33.png' %}" loading="lazy"
+                            alt="Linkedin"></a>
+                    <div class="div-block"></div>
+                </div>
+            </div>
+   
+    </section>
+    <section id="home" class="overlayy">
+
+        <h1 class="Words">Experience</h1>
+        <p class="experience"> <b><i>Database Expert @ </h1>
+                    Iron Mountain· 
+                    April 2022 - Present  
+                   </i></b>
+        <ul class="activity margin-LR-10">
+             
+            <li>· Maintained maximum organization with NoSql cloud service, by properly sorting project components on work tables using data visualization.</li>
+            <li>· Results-oriented quality assurance tester with expertise in a fast-paced SQL startup. With quick Software development life cycles.</li>
+            <li>·Participated in the maintenance and quality assurance of NoSQL ECO projects, after accurate quality assessment, then deployed to the offshore team.</li>
+            <li>·Conducted the flow of the database ,using Automation built with python, to swiftly back up company data to the cloud. </li>
+            <li>· Utilized substantial API, used in importing and exporting data within development scripts.     </li>
+                <br/>
+            </ul>
+            
+             <br>
+                <p class="experience"> <b><i> Product Expert@</h1>
+                            Irobot · 
+                            Oct 2021 - April 2022 ·  
+                            </i></b>
+                <ul class="activity margin-LR-10">
+                     
+                    <li>Delivered unit-tested systems with required characteristics and within
+                        customer-prescribed timeframes.</li>
+                    <li> Conducted regression testing, analyzed results, and submitted
+                        observations to the development team.</li>
+                    <li> Conducted integration test types ranging from data to
+                        Database</li>
+                    <li>Orchestrated and developed holistic systems for It
+                        management and Process-centric BPM.
+                        </li>
+                    <li>·Identified possible system enhancements to improving
+                        functionality and streamline administration.
+                        </li>
+                </ul>
+                        <br>
+                     
+
+                        <p class="experience"> <b><i> Backend Developer @</h1>
+                            Fashionista Africa· 
+                            Feb 2020 - Oct 2021 ·  
+                            </i></b>
+                <ul class="activity margin-LR-10">
+                     
+                    <li>Conducted data modeling, performance, and integration
+                        testing.
+                        </li>
+                    <li> Monitored and maintained, back end cloud MYSQL,
+                        Connecting user-facing front end with all important
+                        back-end functionality and data.
+                        </li>
+                    <li> Identified possible system enhancements to improve the
+                        functionality and streamline administration.</li>
+                    <li>Designed, developed, modified, and debugged programs.
+                        </li>
+                    <li>Orchestrated with backend team to restructure API and reduced number of
+                        API request queries by 28%.
+                        </li>
+                </ul>
+                        <br>
+                        <p class="experience"> <b><i> Assistant Jr Software Engineer @</h1>
+                            Gaz Du Cameroun· 
+                            Mar 2018 - Feb 2020 ·  
+                            </i></b>
+                <ul class="activity margin-LR-10">
+                     
+                    <li>Orchestrated efficient large-scale software deployments with AWS and designed
+                        technology solutions that met or exceeded performance expectations.
+                        </li>
+                    <li> Utilized cloud foundry for efficient building on top of Kubernetes
+                        </li>
+                    <li> ·Developed several algorithms Python script automation for daily maintenance, of
+                        data visualization charts, indexes, tables and data analyses.
+                        </li>
+                    <li>·Designed and maintained streamlined, reusable and reliable code for use within
+                        distributed cloud environments(AWS,Postgressql,NoSql).
+                        
+                        </li>
+                    <li> Efficiently deployed and integrated software engineered by our team and updated integration/deployment scripts to improve continuous integration practices.
+ 
+                        </li> 
+                </ul>
+            
+                
+             
+            
+        
+        </p>
+    </section>
+    <section id="projects" class="overlay">
+        <h1>Projects</h1>
+        <p> Here are a few projects i've been working on</p>
+         
+        </ul>
+    
+        <section class="project-container">
+            <div class="projects-done">
+                <div class="projects-done-card">
+                    <span class="tag">
+                        Python-MSOffice365-Stock-Data-visualization
+                    </span>
+                    <img src="{% static 'images/Stock showcasepi.png' %}" class="project-image" alt="project 1">
+                     
+                </div>
+                <div class="project-info">
+                     <p class="project-des"> This is a Stock project developed, which uses Python, algorithm and data structures, MS office 365, Numpy, DateTime, and Pandas. The code Connects and fetches data from MSOffice, using  MSOffice stock options, and then runs it within the terminal storing it into two types of CSV which are later, reconstructed into time, price, and volume, and plots a visualization graph.</p>
+                     
+                </div>
+                <div class="icon-list-div-II">
+                    <a href="https://github.com/JakeMofa/Python-MSOffice365-Stock-Data-visualization" target="_blank"
+                        class="icon-links w-inline-block"><img src="{% static 'images/Github11.png' %}" loading="lazy" alt="github">
+                        <div class="icon-list-text">Github</div>
+                    </a>
+                </div>
+                     
+            </div>
+            <div class="projects-done">
+                <div class="projects-done-card">
+                    <span class="tag">
+                Ethereum AI forecaster.
+                    </span>
+                    <img src="{% static 'images/Eth forecast dots.png' %}" class="project-image" alt="project 1">
+                    <!-- <a href=" .. "> <button class="project-button"> View on github </button> </a> -->
+                </div>
+                <div class="project-info">
+                     <p class="project-des">This is a project developed, which uses python scripts, Jupyter notebooks,pandas, and yfinance. The code uses yfinance to pull Etheruim information from yahoo finance displaying the current price from 2018 till the present date. The code analyses the graph chart of Etherium price then plots the current price of Ethereum and uses machine learning to predict the Eth price next movements and plots that out use black dots.</p>
+                </div>
+                <div class="icon-list-div-II">
+                    <a href="https://github.com/JakeMofa/Ethereum-AI-Forecaster" target="_blank"
+                        class="icon-links w-inline-block"><img src="{% static 'images/Github11.png' %}" loading="lazy" alt="github">
+                        <div class="icon-list-text">Github</div>
+                    </a>
+                </div>
+                    
+            </div>
+            <div class="projects-done">
+                <div class="projects-done-card">
+                    <br> <!-- take these off later was trying to see if they would bring it down a bit -->
+                    <span class="tag">
+                        Stock History price Analytics.
+                    </span>
+                    <img src="{% static 'images/Figure_1.png' %}" class="project-image" alt="project 1">
+                    <a href=" .. "> <button class="project-button"> View on github </button></a>
+                </div>
+                <br><!-- take these off later was trying to see if they would bring it down a bit -->
+                <div class="project-info">
+                     <p class="project-des">This is a developed project, that uses python scripts, pandas, and matplotlib,to web scrape data off of yahoo finance and plots a data visualization chart.  The program then asks the user how many Stocks he would like to see depending on how many the user inputs, the program then displays the number of lines per each Ticker input.</p>
+                </div>
+                <div class="icon-list-div-II">
+                    <a href="https://github.com/JakeMofa/STOCK-HISTORY-PRICE-ANALYTICS." target="_blank"
+                        class="icon-links w-inline-block"><img src="{% static 'images/Github11.png' %}" loading="lazy" alt="github">
+                        <div class="icon-list-text">Github</div>
+                    </a>
+                </div>     
+            </div>
+        </section>
+        </section>
+    <section id="contact" class="overlay">
+        <h1>Contact</h1>
+        <h3>Email</h3>
+         <button id="copyButton" onclick="
+        (()=> {
+            var copyButton = document.getElementById('copyButton')
+            navigator.clipboard.writeText('Jakemofa@gmail.com');
+            copyButton.innerText = 'Copied'
+        })()
+        ">Copy</button>
+        <p> I am currently look for any new opportunities and my inbox is always open Here is my <a href="{% static 'images/TResume.pdf' %}" download="/Resume.pdf">resume. </a>
+        </p>
+        <div class="icon-list-div-I">
+            <a href="https://github.com/JakeMofa" target="_blank"
+                class="icon-links w-inline-block"><img src="{% static 'images/Github11.png' %}" loading="lazy" alt="github">
+                <div class="icon-list-text">Github</div>
+
+            </a>
+            <a href="https://www.linkedin.com/in/jake-mofa-b52a76205" target="_blank"
+            class="icon-links w-inline-block"><img src="{% static 'images/Linkedin33.png' %}" loading="lazy" alt="linkedin">
+            <div class="icon-list-text">LinkedIn</div>
+        
+            </a>
+        
+    
+    
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <li> During my free time, i enjoy researhing and learning new things under greek mytholodgy.</li>
+        <li> Reading is one of my best things, i love learning  and acquring information on other ways to tackle a new framework</li>
+        
+        
+        </div>
+    </section>
+
+
+
+
+    </div>
+</div>
+
+<footer>
+        <p class="foot"> Built with Django</p>
+</footer>
+</body>
+
+</html>
